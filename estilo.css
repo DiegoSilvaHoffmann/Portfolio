@@ -1,0 +1,268 @@
+/* ----------  Base  -------------*/
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.fundao{
+    background-color: #e57461;
+    transition: 0.6s;
+}
+.dark{
+    background-color: #36334f;
+    transition: 0.6s;
+    color: #f9f7f2;
+}
+.dark .p_1{
+    color: #f9f7f2;
+}
+.dark button{
+    color: #e57461;
+}
+.dark button:hover{
+    color:#36334f;
+}
+
+
+/* --------------  logo e boton dia y noite  ---------------*/
+
+header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+}
+/*header .logo{
+    position: relative;
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 2rem;
+}*/
+
+.righSide{
+   display: flex;
+   justify-content: flex-end; 
+}
+.btns{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;   
+}
+.btns i{
+    font-size: 1.5rem;
+    opacity: 0.7;
+    color: #f9f7f2;
+}
+.btns i:nth-child(2){
+    display: none;
+}
+.btns.active i:nth-child(2){
+    display: block;
+}
+.btns.active i:nth-child(1){
+    display: none;
+
+}
+
+/* --------------  My Name  ----------------*/
+.Eu_inicio{
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;  
+}  
+.Eu_inicio img{
+    margin: -12%;
+    margin-right: -18%;
+}
+
+.Nome{
+    float: right;
+    margin: 10%;
+    padding-left: 2%;
+}
+.p_1{
+    font-family: 'Lora', serif; 
+    text-align: right; 
+    color:#36334f;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --------------- curriculo para download ------- */
+.curriculo{
+    float: right;
+    margin-top: 4%;
+    width: 180px;
+    height: 60px;
+    border-radius: 50px;
+    background: #e57461;
+    box-shadow:  20px 20px 60px #c36352, -20px -20px 60px #ff8570;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: 0px;
+    transition: 0.8s;
+    
+}
+.curriculo:hover{
+    transform: translatex(10px);
+    transition: 1.4s;
+    background-color: #fcdd86;
+}
+
+
+/* --------------- cards de tech ------- */
+.tec_zone{
+    display: grid;
+    z-index: 1;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.tec_zone .card{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border: none;
+    border-radius: 50px;
+    background: #e57461;
+    box-shadow:  20px 20px 60px #c36352, -20px -20px 60px #ff8570;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.tec_zone .card .conteudo{
+    padding: 10px;
+    transform: translateY(60px);
+    opacity: 0;
+    transition: 0.5s;
+   
+}
+.tec_zone .card:hover .conteudo{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.tec_zone .card .conteudo img{
+    width: 100px;
+    height: auto;
+    
+}
+
+/* --------- Area de experiencias ------- */
+.soy{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    text-align: justify;
+    margin: 2rem;
+}
+.caixa{
+    color: aliceblue;
+    width: 300px;
+    height: auto;
+    padding: 3%;
+    border-radius: 10px;
+    background: #529199;
+    box-shadow:  -22px 22px 45px #36334f, 22px -22px 45px #36334f; 
+}
+.caixa img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+button {
+    width: 340px;
+    height: 45px;
+    font-size: 23px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #36334f;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+}
+   
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #fcdd86;
+    z-index: -1;
+    transition: all 0.5s;
+    
+}
+   
+button:hover::before {
+    width: 100%;
+}
+   
+button:hover {
+    color: #e57461;
+}
+   
+button:active:before {
+    background: #fcdd86;
+}
+#teste{
+    transition: 0.5s all;
+    width: 340px;
+    height: auto;
+    color: #f9f7f2;
+    border-radius: 2%;
+    padding: 8%;
+    background-color: #529199;
+}
+
+
+/* --------------- redes sociais/contato ------- */
+.social{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    
+}
+.social a{
+    transform-origin: 0;
+    transition: 0.9s;
+}
+.social a:hover{
+    transform: translateY(-10px);
+    transition: 1.2s;
+}
+
+
+/* ----------- For small devices  -------------- */
+@media screen and (max-width: 320px) {
+    
+    .tec_zone .card .conteudo{
+        opacity: 1;
+        transform: none;
+    }
+}

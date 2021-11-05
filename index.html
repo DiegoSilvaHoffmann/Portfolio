@@ -4,9 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+
+    <script src="https://kit.fontawesome.com/deb21dbd43.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <!--  ==========   Font Paragrafo  ==============  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <!--  ===========   Font Meu nome   ==============  -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="app.js"></script>
+
+    <title>Diego Hoffmann</title>
 </head>
-<body>
+<body class="container-fluid fundao">
+
+    <!--     =============  Navegador =================   -->
+
+    <header>
+        <!--<a href="#" class="logo">Logo</a>-->
+        <div class="righSide">
+            <div class="btns dayNight">
+                <i class="far fa-moon"></i>
+                <i class="far fa-sun"></i>  
+            </div>
+        </div>
+    </header>
+
+    <!-- ==========  Eu =============   -->
+
+    <div class="Eu_inicio" id="Eu_inicio">
+        <img src="imagenes/startup.svg" width="540" height="auto">     
+        <div class="Nome">
+            <p class="p_1" style="font-size: 64px;">Diego Da Silva Hoffmann</p>
+            <p style="text-align: right;">Desarrollador Web || Front-end Developer</p>
+            <div class="curriculo">
+                <a href="imagenes/CvDiego2021.pdf" target="_blank" style="color: #90bec4; text-decoration: none;">Downloand (CV)</a>
+            </div>
+        </div>
+    </div>
+    <!--  ===================  Tecnologias  =================  -->
     
+    <br>
+    <div class="tec_zone" style="margin-top: auto;" id="tec_zone">
+        <div class="card">
+            <div class="conteudo">
+                <img src="imagenes/html5.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="conteudo">
+                <img src="imagenes/css3.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="conteudo">
+                <img src="imagenes/bootstrap.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="conteudo">
+                <img src="imagenes/js_logo.png" style="opacity: 0.65;">
+            </div>
+        </div>
+        <div class="card">
+            <div class="conteudo">
+                <img src="imagenes/python.png" style="opacity: 0.65;">
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--  ==========  Experiencias  =================   -->
+    <div class="soy" id="soy">
+
+        <div class="col-md-5 caixa">
+            <img src="imagenes/designer.svg" width="140px">
+            <br>
+            <p>Aplicar mi experiencia y formación en soluciones.<br>
+            Crecimiento como persona, aportando al equipo y encontrando la felicidad en cada día de trabajo.<br>
+            Desarrollar mi carrera bajo la supervisión y el impulso de una empresa comprometida con la innovación.</p>
+        </div>
+       
+        <div>
+            <button data-toggle="collapse" data-target="#teste">
+                EXPERIENCIAS
+            </button>
+            <div class="collapse fade" id="teste">
+                <p>Experiencia en fotografía, edición y procesamiento de imágenes en exteriores.
+                    Creación de proyectos de capitalización pública en redes sociales, para el reconocimiento y crecimiento de marca.
+                    Aprendizaje diario en marketing, equipamiento y nuevas vistas para fotografiar.
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <!--   ================  Proyetos  ==================  -->
+
+    <div id="proyeto">
+        
+    </div>
+
+    <!--   =============== redes  ==============  -->
+    <div>
+        <div class="social">
+            <a href="https://www.facebook.com/diihoffmann" target="_blank">
+                <img src="imagenes/facebook.svg" width="50px">
+            </a>
+            <a href="https://www.twitter.com/diegovsh" target="_blank">
+                <img src="imagenes/twitter.svg" width="50px">
+            </a>
+            <a href="https://www.instagram.com/diihoffmann" target="_blank">
+                <img src="imagenes/instagram.svg" width="50px">
+            </a>
+            <a href="https://www.linkedin.com/in/diego-hoffmann" target="_blank">
+                <img src="imagenes/linkedin.svg" width="50px">
+            </a>
+            <a href="https://github.com/DiegoSilvaHoffmann" target="_blank">
+                <img src="imagenes/github.svg" width="50px">
+            </a>
+        </div>
+    </div>
+    <!--  ===============   Quem fez  ================  -->
+    <div style="text-align: center;">
+        <p>By Diego Da Silva Hoffmann 2021</p>
+    </div>
+
+    <script>
+        // ----- Menu navegador --------
+        let dayNight = document.querySelector('.dayNight')
+        let body = document.querySelector('body')
+        let exper = document.querySelector('.exper')
+        
+        dayNight.onclick = function(){
+            body.classList.toggle('dark')
+            dayNight.classList.toggle('active')
+        }
+        
+    </script>
 </body>
 </html>
