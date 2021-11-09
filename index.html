@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
     <!--  ===========   Font Meu nome   ==============  -->
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="scrollreveal.min.js"></script>
 
     <title>Diego Hoffmann</title>
 </head>
@@ -38,9 +38,9 @@
     <!-- ==========  Eu =============   -->
 
     <div class="Eu_inicio" id="Eu_inicio">
-        <img src="imagenes/startup.svg" width="540" height="auto">     
+        <img src="imagenes/startup.svg" width="540" height="auto" alt="hombre caminando y ordenador">     
         <div class="Nome">
-            <p class="p_1" style="font-size: 64px;">Diego Da Silva Hoffmann</p>
+            <p class="p_1">Diego Da Silva Hoffmann</p>
             <p style="text-align: right;">Desarrollador Web || Front-end Developer</p>
             <div class="curriculo">
                 <a href="imagenes/CvDiego2021.pdf" target="_blank" style="color: #90bec4; text-decoration: none;">Downloand (CV)</a>
@@ -53,27 +53,27 @@
     <div class="tec_zone" style="margin-top: auto;" id="tec_zone">
         <div class="card">
             <div class="conteudo">
-                <img src="imagenes/html5.png">
+                <img src="imagenes/html5.svg" alt="logo html5">
             </div>
         </div>
         <div class="card">
             <div class="conteudo">
-                <img src="imagenes/css3.png">
+                <img src="imagenes/css3.svg" alt="logo css3">
             </div>
         </div>
         <div class="card">
             <div class="conteudo">
-                <img src="imagenes/bootstrap.png">
+                <img src="imagenes/bootstrap.png" alt="logo bootstrap4">
             </div>
         </div>
         <div class="card">
             <div class="conteudo">
-                <img src="imagenes/js_logo.png" style="opacity: 0.65;">
+                <img src="imagenes/java-script.svg" alt="logo javascript">
             </div>
         </div>
         <div class="card">
             <div class="conteudo">
-                <img src="imagenes/python.png" style="opacity: 0.65;">
+                <img src="imagenes/python.svg" alt="logo python">
             </div>
         </div>
     </div>
@@ -81,50 +81,71 @@
     <!--  ==========  Experiencias  =================   -->
     <div class="soy" id="soy">
 
-        <div class="col-md-5 caixa">
-            <img src="imagenes/designer.svg" width="140px">
+        <div class="col-md-12 caixa">
+            <h2>¿Que deseo?</h2>
             <br>
             <p>Aplicar mi experiencia y formación en soluciones.<br>
             Crecimiento como persona, aportando al equipo y encontrando la felicidad en cada día de trabajo.<br>
             Desarrollar mi carrera bajo la supervisión y el impulso de una empresa comprometida con la innovación.</p>
         </div>
-       
-        <div>
-            <button data-toggle="collapse" data-target="#teste">
-                EXPERIENCIAS
+
+        <div class="accordion exper col-md-4" id="acordeon">
+            <h2 class="col-md-12">
+                Algunas experiencias
+            </h2>
+            <br>
+            <button data-toggle="collapse" data-target="#fotos">
+                Con fotografia
             </button>
-            <div class="collapse fade" id="teste">
-                <p>Experiencia en fotografía, edición y procesamiento de imágenes en exteriores.
-                    Creación de proyectos de capitalización pública en redes sociales, para el reconocimiento y crecimiento de marca.
-                    Aprendizaje diario en marketing, equipamiento y nuevas vistas para fotografiar.
-                    </p>
+            <div class="descricion collapse show" data-parent="#acordeon" id="fotos">
+                <img src="imagenes/LH-LogoVariante.png" width="150px" alt="logo lu hoffmann fotografia">
+                <p>Marzo 2014 - hasta hoy<br><hr>Experiencia en fotografía, edición y procesamiento de imágenes en exteriores.<br><hr>Creación de proyectos de capitalización pública en redes sociales, para el reconocimiento y crecimiento de marca.<br><hr>Aprendizaje diario en marketing, equipamiento y nuevas vistas para fotografiar.
+                </p>
             </div>
+            <button data-toggle="collapse" data-target="#cartorio">
+                Con gerenciamiento de equipo
+            </button>
+            <div class="descricion collapse" data-parent="#acordeon" id="cartorio">
+                <img src="imagenes/logo_ri3.png" width="150px" alt="logo ri3.com.br">
+                <p>Sep 2004 – Jun 2017<br><hr>Implementación y mantenimiento del sistema de solicitud de certificados en línea.<br><hr>Responsable del contacto digital, entre usuario y notario.<br><hr>Entrenamiento y orientación personal.</p>
+            </div>
+            <button data-toggle="collapse" data-target="#vendas">
+                Con ventas
+            </button>
+            <div class="descricion collapse" data-parent="#acordeon" id="vendas">
+                <img src="imagenes/Maisons_du_Monde_logo.png" width="150px" alt="logo maisons du monde">
+                <p>Agos 2021 - hasta hoy<br><hr>Venta directa al cliente.<br>Fidelización de clientes, y lograr objetivos</p>
+            </div>
+            
         </div>
     </div>
 
     <!--   ================  Proyetos  ==================  -->
 
-    <div id="proyeto">
-        
+    <div class="proyecto" id="proyeto">
+        <h2>Proyectos</h2>
+        <div style="display:flex; justify-content: center; align-items: center; margin-top: 2%;">
+            <video src="imagenes/FocusedOpenAmphibian-mobile.mp4" autoplay loop></video>
+        </div>
     </div>
 
     <!--   =============== redes  ==============  -->
     <div>
         <div class="social">
             <a href="https://www.facebook.com/diihoffmann" target="_blank">
-                <img src="imagenes/facebook.svg" width="50px">
+                <img src="imagenes/facebook.svg" width="50px" alt="icon Facebook">
             </a>
             <a href="https://www.twitter.com/diegovsh" target="_blank">
-                <img src="imagenes/twitter.svg" width="50px">
+                <img src="imagenes/twitter.svg" width="50px" alt="icon twitter">
             </a>
             <a href="https://www.instagram.com/diihoffmann" target="_blank">
-                <img src="imagenes/instagram.svg" width="50px">
+                <img src="imagenes/instagram.svg" width="50px" alt="icon instagram">
             </a>
             <a href="https://www.linkedin.com/in/diego-hoffmann" target="_blank">
-                <img src="imagenes/linkedin.svg" width="50px">
+                <img src="imagenes/linkedin.svg" width="50px" alt="icon linkedin">
             </a>
             <a href="https://github.com/DiegoSilvaHoffmann" target="_blank">
-                <img src="imagenes/github.svg" width="50px">
+                <img src="imagenes/github.svg" width="50px" alt="icon github">
             </a>
         </div>
     </div>
@@ -137,13 +158,20 @@
         // ----- Menu navegador --------
         let dayNight = document.querySelector('.dayNight')
         let body = document.querySelector('body')
-        let exper = document.querySelector('.exper')
         
         dayNight.onclick = function(){
             body.classList.toggle('dark')
             dayNight.classList.toggle('active')
         }
-        
+
+        //----- ScrollReveal --------
+        const desliza = ScrollReveal({
+            origin: 'center',
+            duration: 3500,
+            delay: 200,
+        })
+        desliza.reveal(".p_1", {origin: "center"})
+        desliza.reveal(".tec_zone", {origin: "center"})
     </script>
 </body>
 </html>

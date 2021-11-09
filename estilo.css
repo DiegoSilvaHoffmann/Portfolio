@@ -6,6 +6,14 @@ html{
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h2{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
 .fundao{
     background-color: #e57461;
     transition: 0.6s;
@@ -23,6 +31,12 @@ html{
 }
 .dark button:hover{
     color:#36334f;
+}
+.dark .soy h2{
+    color: #f9f7f2;
+}
+.dark .proyecto h2{
+    color: #f9f7f2;
 }
 
 
@@ -47,6 +61,7 @@ header{
 .righSide{
    display: flex;
    justify-content: flex-end; 
+   
 }
 .btns{
     position: relative;
@@ -55,7 +70,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;   
+    cursor: pointer; 
+    position:fixed!important;  
 }
 .btns i{
     font-size: 1.5rem;
@@ -95,6 +111,7 @@ header{
     font-family: 'Lora', serif; 
     text-align: right; 
     color:#36334f;
+    font-size: 64px;
 }
 p{
     font-family: 'Poppins', sans-serif;
@@ -172,14 +189,21 @@ p{
     text-align: justify;
     margin: 2rem;
 }
+.soy h2{
+    color: #36334f;
+    text-align: center;
+    margin-bottom: 3%;
+}
 .caixa{
-    color: aliceblue;
+    color: #f9f7f2;
     width: 300px;
     height: auto;
     padding: 3%;
     border-radius: 10px;
     background: #529199;
-    box-shadow:  -22px 22px 45px #36334f, 22px -22px 45px #36334f; 
+    text-align: center;
+    margin-bottom: 2%;
+    
 }
 .caixa img{
     display: flex;
@@ -188,7 +212,7 @@ p{
     margin: auto;
 }
 button {
-    width: 340px;
+    width: 420px;
     height: 45px;
     font-size: 23px;
     cursor: pointer;
@@ -227,9 +251,8 @@ button:hover {
 button:active:before {
     background: #fcdd86;
 }
-#teste{
-    transition: 0.5s all;
-    width: 340px;
+.descricion{
+    width: 420px;
     height: auto;
     color: #f9f7f2;
     border-radius: 2%;
@@ -237,7 +260,10 @@ button:active:before {
     background-color: #529199;
 }
 
-
+/* ---------------  proyectos -------------------*/
+.proyecto h2{
+    color: #36334f;
+}
 /* --------------- redes sociais/contato ------- */
 .social{
     display: flex;
@@ -259,10 +285,236 @@ button:active:before {
 
 
 /* ----------- For small devices  -------------- */
-@media screen and (max-width: 320px) {
-    
+@media screen and (max-width: 360px) {
+    .btns i{
+        margin-right: -150px;
+        margin-top: -50px;
+        font-size: 1rem;
+    }
+    .Eu_inicio img{
+        width: 240px;
+        margin-top: 5%;
+    }
+    .p_1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 0.85rem;
+    }
+    .curriculo{
+        width: 130px;
+    }
+    .curriculo a{
+        font-size: 0.8rem;
+    }
+    .tec_zone{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .tec_zone .card{
+        width: 120px;
+        height: 120px;
+    }
     .tec_zone .card .conteudo{
         opacity: 1;
         transform: none;
+    }
+    .tec_zone .card .conteudo img{
+        width: 50px;
+    }
+    .soy{
+        margin: auto;
+        justify-content: center;
+        padding: auto;
+    }
+    .caixa h2{
+        font-size: 1.3rem;
+    }
+    .exper h2{
+        font-size: 1.3rem;
+    }
+    .exper button {
+        width: 240px;
+        height: 40px;
+        margin: auto;
+        font-size: 0.75rem;
+        margin: auto;
+    }
+    .descricion{
+        width: 240px;
+        text-align: left;
+        font-size: 1rem;
+        margin: auto;
+    }
+    .proyecto video{
+        width: 80%;
+    }
+    .proyecto h2{
+        font-size: 1.3rem;
+    }
+    .social img{
+        width: 30px;
+    }
+    .social{
+        margin-top: 15%;
+    }
+}
+/* ----------------- for device Medium ------------*/
+@media screen and (min-width: 576px) and (max-width: 995px){
+    .btns i{
+        margin-right: -250%;
+        font-size: 1.3rem;
+    }
+    .Eu_inicio img{
+        width: 320px;
+        margin-top: 5%;
+    }
+    .p_1{
+        font-size: 44px;
+    }
+    p{
+        font-size: 0.85rem;
+    }
+    .curriculo{
+        width: 130px;
+    }
+    .curriculo a{
+        font-size: 0.8rem;
+    }
+    .tec_zone{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .tec_zone .card{
+        width: 120px;
+        height: 120px;
+    }
+    .tec_zone .card .conteudo{
+        opacity: 1;
+        transform: none;
+    }
+    .tec_zone .card .conteudo img{
+        width: 50px;
+    }
+    .soy{
+        margin: auto;
+        justify-content: center;
+        padding: auto;
+    }
+    .caixa h2{
+        font-size: 1.3rem;
+    }
+    
+    .exper h2{
+        font-size: 1.3rem;
+    }
+    .exper button {
+        width: 340px;
+        height: 40px;
+        margin: auto;
+        font-size: 0.75rem;
+        margin-left: -30%;
+    }
+    .descricion{
+        width: 340px;
+        text-align: left;
+        font-size: 1rem;
+        margin-left: -30%;
+    }
+    .proyecto video{
+        width: 320px;
+    }
+    .proyecto h2{
+        font-size: 1.3rem;
+    }
+    .social img{
+        width: 30px;
+    }
+    .social{
+        margin-top: 15%;
+    }
+}
+/* ------------- for medium device 2  --------------*/
+@media screen and (max-width: 996px) {
+    .btns i{
+        margin-right: -250%;
+        font-size: 1.3rem;
+    }
+    
+    .Eu_inicio{
+        display: flex;
+    }
+    .Eu_inicio img{
+        width: 320px;
+    }
+    .p_1{
+        font-size: 54px;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .curriculo{
+        width: 150px;
+    }
+    .curriculo a{
+        font-size: 0.8rem;
+    }
+    .tec_zone{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .tec_zone .card{
+        width: 120px;
+        height: 120px;
+    }
+    .tec_zone .card .conteudo{
+        opacity: 1;
+        transform: none;
+    }
+    .tec_zone .card .conteudo img{
+        width: 50px;
+    }
+    
+    .caixa h2{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .soy{
+        margin: auto;
+    }
+        
+    .exper h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .exper button {
+        width: 420px;
+        height: 40px;
+        margin: auto;
+        font-size: 1rem;
+    }
+    .exper button{
+        margin-left: -54%;
+    }
+    .descricion{
+        width: 420px;
+        text-align: left;
+        font-size: 1rem;
+        margin-left: -54%;
+    }
+    .proyecto video{
+        width: 460px;
+    }
+    .proyecto h2{
+        font-size: 1.3rem;
+    }
+    .social img{
+        width: 30px;
+    }
+    .social{
+        margin-top: 15%;
     }
 }
