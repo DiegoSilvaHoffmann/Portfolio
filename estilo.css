@@ -361,7 +361,7 @@ button:active:before {
     }
 }
 /* ----------------- for device Medium ------------*/
-@media screen and (min-width: 576px) and (max-width: 995px){
+@media screen and (min-width: 361px) and (max-width: 800px){
     .btns i{
         margin-right: -250%;
         font-size: 1.3rem;
@@ -411,20 +411,20 @@ button:active:before {
         font-size: 1.3rem;
     }
     .exper button {
-        width: 340px;
+        width: 240px;
         height: 40px;
         margin: auto;
         font-size: 0.75rem;
-        margin-left: -30%;
+        margin-left: -0%;
     }
     .descricion{
-        width: 340px;
+        width: 240px;
         text-align: left;
         font-size: 1rem;
-        margin-left: -30%;
+        margin-left: -0%;
     }
     .proyecto video{
-        width: 320px;
+        width: 240px;
     }
     .proyecto h2{
         font-size: 1.3rem;
@@ -437,7 +437,7 @@ button:active:before {
     }
 }
 /* ------------- for medium device 2  --------------*/
-@media screen and (max-width: 996px) {
+@media screen and (min-width: 996px) {
     .btns i{
         margin-right: -250%;
         font-size: 1.3rem;
