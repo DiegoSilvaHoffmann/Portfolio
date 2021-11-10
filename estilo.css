@@ -251,14 +251,7 @@ button:hover {
 button:active:before {
     background: #fcdd86;
 }
-.descricion{
-    width: 420px;
-    height: auto;
-    color: #f9f7f2;
-    border-radius: 2%;
-    padding: 8%;
-    background-color: #529199;
-}
+
 
 /* ---------------  proyectos -------------------*/
 .proyecto h2{
@@ -331,22 +324,7 @@ button:active:before {
     .caixa h2{
         font-size: 1.3rem;
     }
-    .exper h2{
-        font-size: 1.3rem;
-    }
-    .exper button {
-        width: 240px;
-        height: 40px;
-        margin: auto;
-        font-size: 0.75rem;
-        margin: auto;
-    }
-    .descricion{
-        width: 240px;
-        text-align: left;
-        font-size: 1rem;
-        margin: auto;
-    }
+   
     .proyecto video{
         width: 80%;
     }
@@ -407,16 +385,6 @@ button:active:before {
         font-size: 1.3rem;
     }
     
-    .exper h2{
-        font-size: 1.3rem;
-    }
-    .exper button {
-        width: 240px;
-        height: 40px;
-        margin: auto;
-        font-size: 0.75rem;
-        margin-left: -0%;
-    }
     .descricion{
         width: 240px;
         text-align: left;
@@ -437,84 +405,3 @@ button:active:before {
     }
 }
 /* ------------- for medium device 2  --------------*/
-@media screen and (min-width: 996px) {
-    .btns i{
-        margin-right: -250%;
-        font-size: 1.3rem;
-    }
-    
-    .Eu_inicio{
-        display: flex;
-    }
-    .Eu_inicio img{
-        width: 320px;
-    }
-    .p_1{
-        font-size: 54px;
-    }
-    p{
-        font-size: 1rem;
-    }
-    .curriculo{
-        width: 150px;
-    }
-    .curriculo a{
-        font-size: 0.8rem;
-    }
-    .tec_zone{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-    .tec_zone .card{
-        width: 120px;
-        height: 120px;
-    }
-    .tec_zone .card .conteudo{
-        opacity: 1;
-        transform: none;
-    }
-    .tec_zone .card .conteudo img{
-        width: 50px;
-    }
-    
-    .caixa h2{
-        font-size: 1.3rem;
-        text-align: center;
-    }
-    .soy{
-        margin: auto;
-    }
-        
-    .exper h2{
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    .exper button {
-        width: 420px;
-        height: 40px;
-        margin: auto;
-        font-size: 1rem;
-    }
-    .exper button{
-        margin-left: -54%;
-    }
-    .descricion{
-        width: 420px;
-        text-align: left;
-        font-size: 1rem;
-        margin-left: -54%;
-    }
-    .proyecto video{
-        width: 460px;
-    }
-    .proyecto h2{
-        font-size: 1.3rem;
-    }
-    .social img{
-        width: 30px;
-    }
-    .social{
-        margin-top: 15%;
-    }
-}
