@@ -12,6 +12,7 @@ body{
 h2{
     text-align: center;
     margin-bottom: 3%;
+    color: #36334f;
 }
 
 .fundao{
@@ -211,47 +212,19 @@ p{
     align-items: center;
     margin: auto;
 }
-button {
-    width: 420px;
-    height: 45px;
-    font-size: 23px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: transparent;
-    color: #36334f;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    position: relative;
-    transition: all 0.5s;
-    z-index: 1;
+.exper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
-   
-button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 5px;
-    height: 100%;
-    background-color: #fcdd86;
-    z-index: -1;
-    transition: all 0.5s;
-    
+.exper .card{
+    width: 380px;
+    height: auto;
+    padding: 3%;
+    background-color: #529199;
+    color: #f9f7f2;
+    margin: 2%;
 }
-   
-button:hover::before {
-    width: 100%;
-}
-   
-button:hover {
-    color: #e57461;
-}
-   
-button:active:before {
-    background: #fcdd86;
-}
-
 
 /* ---------------  proyectos -------------------*/
 .proyecto h2{
@@ -354,6 +327,7 @@ button:active:before {
     p{
         font-size: 0.85rem;
     }
+
     .curriculo{
         width: 130px;
     }
@@ -383,6 +357,23 @@ button:active:before {
     }
     .caixa h2{
         font-size: 1.3rem;
+    }
+    
+    .exper{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-bottom: 3%;
+    }
+    
+    .exper .card{
+        width: 240px;
+        height: auto;
+        padding: 3%;
+        background-color: #529199;
+        color: #f9f7f2;
+        margin: 2%;
+        font-size: 0.85rem;
     }
     
     .descricion{
