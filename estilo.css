@@ -72,7 +72,7 @@ header{
     justify-content: center;
     align-items: center;
     cursor: pointer; 
-    position:fixed!important;  
+    position: fixed!important;  
 }
 .btns i{
     font-size: 1.5rem;
@@ -145,7 +145,7 @@ p{
 .tec_zone{
     display: grid;
     z-index: 1;
-    grid-gap: 1rem;
+    grid-gap: .3rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .tec_zone .card{
@@ -229,6 +229,7 @@ p{
 /* ---------------  proyectos -------------------*/
 .proyecto h2{
     color: #36334f;
+    margin-top: 3%;
 }
 /* --------------- redes sociais/contato ------- */
 .social{
