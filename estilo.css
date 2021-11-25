@@ -244,7 +244,13 @@ p{
     border-radius: 8px;
     background-color: #36334f;
     box-shadow: 0px 10px 12px #f9f7f2;
+    transition: 0.5s;
 }
+.proyecto button:hover{
+    transform: translateY(10px);
+    box-shadow: none;
+}
+
 .proyecto button a{
     color: #f9f7f2;
     text-decoration: none;
