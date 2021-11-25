@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(147, 172, 241);
+    background-image: url("img_proj/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'M PLUS 2', sans-serif;
+}
+.container{
+    margin: 8%;
+    background-color:white;
+    width: 400px;
+    height: 650px;
+    border-radius: 20px;
+    text-align: center;
+}
+img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 400px;
+}
+#img_music{
+    width: 50px;
+}
+#inicio{
+    margin: 8%;
+    width: 350px;
+    height: 120px;
+    
+}
+h2{
+    margin-bottom: 7%;
+    font-weight: bold;
+}
+a:hover{
+    color: blue;
+    transition: 0.6s;
+}
+p{
+    font-size: 10pt;
+}
+
+.assinatura{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f3f3f3;
+    margin: auto;
+    width: 360px;
+    height: 70px;
+    border-radius: 10px;
+}
+button{
+    background-color: rgb(70, 52, 233);
+    border-radius: 10px;
+    width: 340px;
+    height: 50px;
+    border: none;
+    margin-top: 10%;
+    color: white;
+    cursor: grab;
+    transition: 0.6s;
+    box-shadow: 0px 10px 20px #1e0763;
+    font-size: 12pt;
+}
+button:hover{
+    background-color: rgb(86, 86, 245);
+}
+#cancelar{
+    margin-top: 7%;
+    font-weight: bold;
+    color: rgb(122, 122, 122);
+    cursor: grab;
+}
+#cancelar:hover{
+    color: #1e0763;
+}
+
+@media screen and (max-width: 440px) {
+    .container{
+        width: 300px;
+        height: 540px;
+        border-radius: 20px;
+    }
+    img{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 300px;
+    }
+    #img_music{
+        width: 30px;
+    }
+    #inicio{
+        margin: 8%;
+        width: 260px;
+        height: 140px;
+        
+    }
+    p{
+        font-size: 8pt;
+    }
+    a{
+        font-size: 9pt;
+    }
+    .assinatura{
+        margin: auto;
+        width: 260px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    button{
+        width: 260px;
+        height: 40px;
+        font-size: 10pt;
+        font-weight: bold;
+    }
+    #cancelar{
+        font-size: 10pt;
+    }
+}
