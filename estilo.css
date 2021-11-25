@@ -231,6 +231,26 @@ p{
     color: #36334f;
     margin-top: 3%;
 }
+#projetinho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+.proyecto button{
+    border: none;
+    width: 160px;
+    height: 80px;
+    border-radius: 8px;
+    background-color: #36334f;
+    box-shadow: 0px 10px 20px ;
+}
+.proyecto button a{
+    color: #f9f7f2;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
 /* --------------- redes sociais/contato ------- */
 .social{
     display: flex;
