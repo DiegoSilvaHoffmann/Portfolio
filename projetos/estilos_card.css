@@ -84,14 +84,14 @@ button:hover{
 
 @media screen and (max-width: 440px) {
     .container{
-        width: 300px;
+        width: 290px;
         height: 540px;
         border-radius: 20px;
     }
     img{
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        width: 300px;
+        width: 290px;
     }
     #img_music{
         width: 30px;
@@ -122,5 +122,11 @@ button:hover{
     }
     #cancelar{
         font-size: 10pt;
+    }
+    #Voltar{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
