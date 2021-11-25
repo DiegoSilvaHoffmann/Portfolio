@@ -243,7 +243,7 @@ p{
     height: 80px;
     border-radius: 8px;
     background-color: #36334f;
-    box-shadow: 0px 10px 20px ;
+    box-shadow: 0px 10px 12px #f9f7f2;
 }
 .proyecto button a{
     color: #f9f7f2;
