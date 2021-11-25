@@ -7,18 +7,17 @@ body{
     background-image: url("img_proj/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: 'M PLUS 2', sans-serif;
 }
 .container{
-    margin: 8%;
+    margin: auto;
+    margin-top: 10%;
     background-color:white;
     width: 400px;
     height: 650px;
     border-radius: 20px;
     text-align: center;
+    
 }
 img{
     border-top-left-radius: 20px;
