@@ -240,10 +240,10 @@ p{
 .proyecto button{
     border: none;
     width: 160px;
-    height: 80px;
+    height: 100px;
     border-radius: 8px;
     background-color: #36334f;
-    box-shadow: 0px 10px 12px #f9f7f2;
+    box-shadow: 0px 10px 8px #f9f7f2;
     transition: 0.5s;
 }
 .proyecto button:hover{
