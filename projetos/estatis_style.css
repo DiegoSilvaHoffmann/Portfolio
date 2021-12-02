@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+}
+.card{
+    margin: auto;
+    margin-top: 10%;
+    width: 1200px;
+    height: 510px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container{
+    padding: 3%;
+    background: hsl(244, 38%, 16%);
+    border-top-left-radius: 4%;
+    border-bottom-left-radius: 4%;
+}
+#princ_text{
+    margin: 8%;
+}
+#princ_text h1{
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+       
+}
+#princ_text p{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 350px;
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);   
+    font-weight: 400px;
+}
+.palavra{
+    color: hsl(277, 64%, 61%);
+}
+#foto{
+    background-color:hsl(277, 64%, 61%);
+    border-bottom-right-radius: 4%;
+    border-top-right-radius: 4%;
+}
+img{
+    width: 600px;
+    height: 510px;
+    border-bottom-right-radius: 4%;
+    border-top-right-radius: 4%;
+    opacity: 0.4;    
+}
+.mini_card{
+    margin: auto;
+    width: 400px;
+    color: hsla(0, 0%, 100%, 0.6);
+    display: flex;
+    justify-content: space-between;
+}
+.mini_card div{
+    margin-top: 20%;
+    width: 80px;
+    height: 80px;
+}
+.mini_card div h2{
+    font-family: 'Lexend Deca', sans-serif;
+}
+.mini_card div p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+footer{
+    width: 100%;
+    bottom: 0;
+    height: 40px;
+    position: absolute;
+}
+.attribution{
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+@media screen and (max-width: 520px) {
+
+    .card{
+        margin: auto;
+        width: 260px;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        border-radius: none;
+    }
+    .container{
+        width: 245px;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 4%;
+    }
+    #princ_text h1{
+        font-size: 20px;
+        width: 200px;
+        text-align: center;
+    }
+    #princ_text p{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 200px;
+        font-size: 12px;
+        text-align: center;  
+    }
+    #foto{
+        width: 260px;
+        height: 200px;
+        margin-top: 2%;
+        border-top-left-radius: 4%;
+        border-bottom-right-radius: 0;
+    }
+    img{
+        width: 260px;
+        height: 200px;
+        border-top-left-radius: 4%;
+    }
+    .mini_card{
+        width: 200px;
+        color: hsla(0, 0%, 100%, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .mini_card div{
+        margin-top: 2%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+    }
+    .mini_card h2{
+        font-size: 15px;
+    }
+    .mini_card div p{
+        font-size: 10px;
+    }
+    footer{
+        font-size: 10px;
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 521px) and (max-width: 1080px) {
+    .card{
+        margin: auto;
+        margin-top: 5%;
+        width: 700px;
+        height: 320px; 
+    }
+    #princ_text h1{
+        font-size: 24px;
+    }
+    #princ_text p{
+        margin-top: 2%;
+        margin-bottom: 1%;
+        width: 300px;
+        font-size: 12px;
+    }
+    img{
+        width: 340px;
+        height: 320px;
+    }
+    .mini_card{
+        width: 280px;
+    }
+    .mini_card div{
+        margin-top: 20%;
+        width: 40px;
+        height: 40px;
+    }
+    .mini_card h2{
+        font-size: 18px;
+    }
+    .mini_card div p{
+        font-size: 10px;
+    }
+    footer{
+        bottom: 0;
+        font-size: 10px;
+        margin-top: 5%;
+    }
+}
