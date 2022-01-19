@@ -14,6 +14,14 @@ h2{
     margin-bottom: 3%;
     color: #36334f;
 }
+.titulo_experiencias{
+    text-align: center;
+    color: #f9f7f2;  
+    font-family: 'Lora', serif;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
 
 .fundao{
     background-color: #e57461;
@@ -21,7 +29,6 @@ h2{
 }
 .dark{
     background-color: #36334f;
-    transition: 0.6s;
     color: #f9f7f2;
 }
 .dark .p_1{
@@ -44,13 +51,9 @@ h2{
 /* --------------  logo e boton dia y noite  ---------------*/
 
 header{
-    position: absolute;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 10000;
+    padding: 40px;
 }
 /*header .logo{
     position: relative;
@@ -93,18 +96,17 @@ header{
 /* --------------  My Name  ----------------*/
 .Eu_inicio{
     display: flex;
-    align-items: stretch;
+    justify-content: space-evenly;
+    align-items:baseline;
     flex-wrap: wrap;
-    justify-content: center;
     height: 100vh;  
 }  
 .Eu_inicio img{
-    margin: -12%;
-    margin-right: -18%;
+    width: 540px;
+    height: auto;
+    margin: 4%;     
 }
-
 .Nome{
-    float: right;
     margin: 10%;
     padding-left: 2%;
 }
@@ -114,8 +116,8 @@ header{
     color:#36334f;
     font-size: 64px;
 }
-p{
-    font-family: 'Poppins', sans-serif;
+.Nome p{
+    text-align: right;
 }
 
 /* --------------- curriculo para download ------- */
@@ -134,9 +136,13 @@ p{
     transition: 0.8s;
     
 }
+.curriculo a{
+    color: #90bec4;
+    text-decoration: none;
+}
 .curriculo:hover{
     transform: translatex(10px);
-    transition: 1.4s;
+    transition: 0.8s;
     background-color: #fcdd86;
 }
 
@@ -164,15 +170,9 @@ p{
 }
 .tec_zone .card .conteudo{
     padding: 10px;
-    transform: translateY(60px);
-    opacity: 0;
     transition: 0.5s;
-   
 }
-.tec_zone .card:hover .conteudo{
-    transform: translateY(0px);
-    opacity: 1;
-}
+
 .tec_zone .card .conteudo img{
     width: 100px;
     height: auto;
@@ -275,11 +275,11 @@ p{
 }
 .social a{
     transform-origin: 0;
-    transition: 0.9s;
+    transition: 0.6s;
 }
 .social a:hover{
     transform: translateY(-10px);
-    transition: 1.2s;
+    
 }
 
 
