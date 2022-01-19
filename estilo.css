@@ -237,10 +237,14 @@ header{
 .cs_color{
     color: #529199;
 }
+.js_color{
+    color: #fcdd86;
+}
 #projetinho{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 5%;
 }
 .proyecto button{
@@ -251,6 +255,7 @@ header{
     background-color: #36334f;
     box-shadow: 0px 10px 8px #f9f7f2;
     transition: 0.5s;
+    margin: 10px;
 }
 .proyecto button:hover{
     transform: translateY(10px);
