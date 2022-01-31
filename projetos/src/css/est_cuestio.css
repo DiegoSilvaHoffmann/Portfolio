@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+body{
+    font-family: 'Zen Kurenaido', sans-serif;
+    background-color: rgb(74, 85, 145);
+    color: aliceblue;
+}
+h1{
+    text-align: center;
+}
+.caixa{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 4px;
+    background-color: rgb(74, 88, 140);
+    color: azure;
+}
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.part1{
+    display: flex;
+    padding: 2%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.part2{
+    display: flex;
+    justify-content: center;
+}
+.part3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+select{
+    background-color: rgb(74, 88, 140);
+    color: azure;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons input{
+    margin: 2%;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.2rem;
+    box-shadow: 0px 6px  rgba(100, 92, 116, 0.384),
+                0px 12px 8px white;
+    cursor: pointer;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+.buttons input:hover{
+    box-shadow: 0px 0px;
+    transform: translateY(8px);
+    background-color: aqua;
+}
+
+/*---- pagina nueva ----*/
+
+.datos_part1{
+    background-color: rgb(20, 18, 29);
+    padding: 4%;
+    border-radius: 6px;
+}

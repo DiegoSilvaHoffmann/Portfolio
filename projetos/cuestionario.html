@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../projetos/src/js/cuestio.js"></script>
+    <link rel="stylesheet" href="../projetos/src/css/est_cuestio.css">
+
+    
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro Cliente</h1>
+    <hr>
+    <form name="f1">
+        <div class="part1">
+            <p>Nombre <input class="caixa" type="text" id="nombre" size="30"></p>
+            <p>Apellidos <input class="caixa" type="text" id="apellido" size="30"></p>
+            <p>Fecha de nacimiento <input class="caixa" type="date" id="Dnasci"></p>
+        </div>
+        <div class="part2">
+            <p>E-mail <input class="caixa" type="email" id="mail" size="30"></p>
+        </div>
+        <div class="part3">
+            <p>Dirección <input class="caixa" type="text" id="direccion" size="50"></p>
+            <select>
+                <option value="opc1" selected>-- Ciudad --</option>
+                <option value="bcn">Barcelona</option>
+                <option value="md">Madrid</option>
+                <option value="sev">Sevilla</option>
+                <option value="val">Valencia</option>
+            </select>
+        </div>
+        <hr>
+        <div class="buttons">
+            <input type="button" value="Visualizar datos" onclick="mira_datos()">
+            <input type="reset" value="Borrar">
+            <input type="submit" value="Enviar">
+            
+        </div>
+    </form>
+   
+</body>
+</html>
