@@ -45,28 +45,40 @@ select{
     align-items: center;
     justify-content: center;
 }
-.buttons input{
-    margin: 2%;
-    border: none;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1.2rem;
-    box-shadow: 0px 6px  rgba(100, 92, 116, 0.384),
-                0px 12px 8px white;
-    cursor: pointer;
+
+.buttons input {
     font-family: 'Zen Kurenaido', sans-serif;
     font-weight: bold;
-    transition: 0.4s ease-in-out;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border-radius: 30px;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
 }
-.buttons input:hover{
-    box-shadow: 0px 0px;
-    transform: translateY(8px);
-    background-color: aqua;
+.buttons input:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+.buttons input:active {
+    transform: scale(0.9);
 }
 
 /*---- pagina nueva ----*/
 
 .datos_part1{
-    background-color: rgb(20, 18, 29);
-    padding: 4%;
-    border-radius: 6px;
+    padding: 6%;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #434d83, #4f5b9b);
+    box-shadow:  20px 20px 60px #3f487b,
+             -20px -20px 60px #5562a7;
+
 }

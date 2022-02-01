@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,19 +24,19 @@
         </div>
         <div class="part3">
             <p>Dirección <input class="caixa" type="text" id="direccion" size="50"></p>
-            <select>
-                <option value="opc1" selected>-- Ciudad --</option>
-                <option value="bcn">Barcelona</option>
-                <option value="md">Madrid</option>
-                <option value="sev">Sevilla</option>
-                <option value="val">Valencia</option>
+            <select id="ciudad">
+                <option selected>-- Ciudad --</option>
+                <option>Barcelona</option>
+                <option>Madrid</option>
+                <option>Sevilla</option>
+                <option>Valencia</option>
             </select>
         </div>
         <hr>
         <div class="buttons">
             <input type="button" value="Visualizar datos" onclick="mira_datos()">
-            <input type="reset" value="Borrar">
-            <input type="submit" value="Enviar">
+            <input type="reset" id="borrar" value="Borrar">
+            <input type="submit" id="enviar" value="Enviar">
             
         </div>
     </form>
