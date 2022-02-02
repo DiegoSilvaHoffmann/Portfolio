@@ -1,282 +1,242 @@
-/* ----------  Base  -------------*/
+/* ------------ Fontes ------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+/* --------------- Base --------------- */
 html{
     scroll-behavior: smooth;
 }
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Poppins', sans-serif;
+    color: #36334f;
+    background-color: #e57461;
 }
-h2{
-    text-align: center;
-    margin-bottom: 3%;
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
     color: #36334f;
 }
-.titulo_experiencias{
-    text-align: center;
-    color: #f9f7f2;  
-    font-family: 'Lora', serif;
-}
-p{
-    font-family: 'Poppins', sans-serif;
-}
 
-.fundao{
-    background-color: #e57461;
-    transition: 0.6s;
-}
+/*------ Definicoes de modo Noite ---------*/
 .dark{
     background-color: #36334f;
+    font-family: 'Poppins', sans-serif;
     color: #f9f7f2;
 }
-.dark .p_1{
+.dark .face .p_1{
     color: #f9f7f2;
 }
-.dark button{
-    color: #e57461;
-}
-.dark button:hover{
-    color:#36334f;
-}
-.dark .soy h2{
+.dark .cabeza .menu .opicion a{
     color: #f9f7f2;
 }
-.dark .proyecto h2{
+.dark .cabeza .navega .menu .opicion a:hover{
+    border-left: 4px solid #fcdd86;
     color: #f9f7f2;
+    font-weight: 300;
 }
-
-
-/* --------------  logo e boton dia y noite  ---------------*/
-
-header{
+.dark .soy{
+    border-radius: 50px;
+    background: #36334f;
+    box-shadow: inset 20px 20px 60px #2e2b43,
+            inset -20px -20px 60px #3e3b5b;
+}
+/* --------- Navegacion ---------*/
+.cabeza{
     display: flex;
+    
     align-items: center;
-    padding: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0 auto;
 }
-/*header .logo{
-    position: relative;
-    display: inline-flex;
-    text-decoration: none;
-    font-size: 2rem;
-}*/
-
-.righSide{
-   display: flex;
-   justify-content: flex-end; 
+.cabeza .btn{
+    width: 40px;
+    cursor: pointer;
+    position: fixed;
+}
+.cabeza .btn i{
+    font-size: 1.3rem;
+    opacity: 0.7;
    
 }
-.btns{
-    position: relative;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer; 
-    position: fixed!important;  
-}
-.btns i{
-    font-size: 1.5rem;
-    opacity: 0.7;
-    color: #f9f7f2;
-}
-.btns i:nth-child(2){
+.cabeza .btn i:nth-child(2){
     display: none;
 }
-.btns.active i:nth-child(2){
+.cabeza .btn.active i:nth-child(2){
     display: block;
 }
-.btns.active i:nth-child(1){
+.cabeza .btn.active i:nth-child(1){
     display: none;
-
 }
-
-/* --------------  My Name  ----------------*/
-.Eu_inicio{
+.cabeza .menu{
     display: flex;
-    justify-content: space-evenly;
-    align-items:baseline;
-    flex-wrap: wrap;
-    height: 100vh;  
-}  
-.Eu_inicio img{
+    margin-left: 40px;
+}
+.cabeza .navega .menu .opicion{
+    margin: 10px;
+}
+.cabeza .navega .menu .opicion a{
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+.cabeza .navega .menu .opicion a:hover{
+    border-left: 4px solid #36334f;
+    color: #36334f;
+}
+/* ---------- principal --------*/
+.face img{
     width: 540px;
     height: auto;
-    margin: 4%;     
+    margin: 4%;
 }
-.Nome{
-    margin: 10%;
-    padding-left: 2%;
+.face{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
 }
-.p_1{
-    font-family: 'Lora', serif; 
-    text-align: right; 
-    color:#36334f;
+.meu_nome .nome{
+    font-family: 'Lora', serif;
     font-size: 64px;
+    font-weight: 300;
 }
-.Nome p{
+.face .p_1{
+    color: #36334f;
+    font-weight: 300;
     text-align: right;
 }
 
-/* --------------- curriculo para download ------- */
-.curriculo{
+.face .curriculo{
     float: right;
     margin-top: 4%;
     width: 180px;
     height: 60px;
-    border-radius: 50px;
+    border-radius: 60px;
     background: #e57461;
-    box-shadow:  20px 20px 60px #c36352, -20px -20px 60px #ff8570;
+    box-shadow: 20px 20px 60px #c36352, 
+    -20px -20px 60px #ff8570;
     display: flex;
-    align-items: center;
     justify-content: center;
-    transform-origin: 0px;
-    transition: 0.8s;
-    
+    align-items: center;
+    transition: 0.4s ease-in-out;
 }
-.curriculo a{
-    color: #90bec4;
-    text-decoration: none;
-}
-.curriculo:hover{
-    transform: translatex(10px);
-    transition: 0.8s;
+.face .curriculo:hover{
     background-color: #fcdd86;
+    font-weight: bold;
+    transform: translatex(10px);
 }
-
-
-/* --------------- cards de tech ------- */
-.tec_zone{
+/*------------------ Sobre mim ---------------------*/
+.soy{
+    margin: 4%;
+    padding: 4%;
+    border-radius: 50px;
+    background: #ff8570;
+    box-shadow: inset 20px 20px 60px #d9715f,
+            inset -20px -20px 60px #ff9981;
+}
+.soy .eu_pessoa{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.soy h3{
+    text-align: center;
+    margin: 30px;
+}
+.soy .eu_pessoa .foto_eu img{
+    height: 420px;
+    width: auto;
+    border-radius: 20px;
+}
+.soy .eu_pessoa .texto_eu{
+    width: 420px;
+    text-align: justify;    
+}
+/* -------------- Tecnologias -------------------*/
+.tecnologias{
+    margin-top: 10%;
+}
+.tecnologias h3{
+    text-align: center;
+    margin: 100px 0;
+}
+.tec_zona{
     display: grid;
     z-index: 1;
     grid-gap: .3rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.tec_zone .card{
+.tec_zona .card{
     width: 200px;
     height: 200px;
     margin: auto;
-    border: none;
     border-radius: 50px;
     background: #e57461;
-    box-shadow:  20px 20px 60px #c36352, -20px -20px 60px #ff8570;
+    box-shadow: 20px 20px 60px #c36352,
+                -20px -20px 60px #ff8570;
     display: flex;
-    align-items: center;
     justify-content: center;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
 }
-.tec_zone .card .conteudo{
-    padding: 10px;
-    transition: 0.5s;
-}
-
-.tec_zone .card .conteudo img{
+.tec_zona .card .conteudo img{
     width: 100px;
-    height: auto;
-    
 }
-
-/* --------- Area de experiencias ------- */
-.soy{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    height: auto;
-    padding: 10%;
-    text-align: justify;
-    margin: 2rem;
+.tec_zona .card .conteudo{
+    padding: 10px;
 }
-.soy h2{
-    color: #36334f;
+/*-------------- Experiencias ---------------*/
+.experi h3{
     text-align: center;
-    margin-bottom: 3%;
+    margin: 100px;
+}
+.desejo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .caixa{
     color: #f9f7f2;
-    width: 300px;
+    width: auto;
     height: auto;
     padding: 3%;
     border-radius: 10px;
     background: #529199;
     text-align: center;
-    margin-bottom: 2%;
-    
+    margin: 30px;    
 }
-.caixa img{
+.deseo_profi .exper_descrita{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-.exper{
-    display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
-.exper .card{
+.exper_descrita .cartao{
     width: 380px;
     height: auto;
     padding: 3%;
     background-color: #529199;
     color: #f9f7f2;
     margin: 2%;
+    border-radius: 10px;
 }
+/* ----------- projetos -------------*/
 
-/* ---------------  proyectos -------------------*/
-.proyecto h2{
-    color: #36334f;
-    margin-top: 3%;
-}
-.ht_color{
-    color: #fcdd86;
-}
-.cs_color{
-    color: #529199;
-}
-.js_color{
-    color: #fcdd86;
-}
-#projetinho{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 5%;
-}
-.proyecto button{
-    border: none; 
-    width: 160px;
-    height: 100px;
-    border-radius: 8px;
-    background-color: #36334f;
-    box-shadow: 0px 10px 8px #f9f7f2;
-    transition: 0.5s;
-    margin: 10px;
-}
-.proyecto button:hover{
-    transform: translateY(10px);
-    box-shadow: none;
-}
-
-.proyecto button a{
-    color: #f9f7f2;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-}
-/* --------------- redes sociais/contato ------- */
+/*------------- redes sociais / contato -----------*/
 .social{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
-    height: auto;
-    padding: 10%;
-    
+    align-items: center;
+    margin: 100px;
+}
+.social img{
+    width: 40px;
 }
 .social a{
     transform-origin: 0;
@@ -284,153 +244,4 @@ header{
 }
 .social a:hover{
     transform: translateY(-10px);
-    
 }
-
-
-/* ----------- For small devices  -------------- */
-@media screen and (max-width: 360px) {
-    .btns i{
-        margin-right: -150px;
-        margin-top: -50px;
-        font-size: 1rem;
-    }
-    .Eu_inicio img{
-        width: 240px;
-        margin-top: 5%;
-    }
-    .p_1{
-        font-size: 40px;
-    }
-    p{
-        font-size: 0.85rem;
-    }
-    .curriculo{
-        width: 130px;
-    }
-    .curriculo a{
-        font-size: 0.8rem;
-    }
-    .tec_zone{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-    .tec_zone .card{
-        width: 120px;
-        height: 120px;
-    }
-    .tec_zone .card .conteudo{
-        opacity: 1;
-        transform: none;
-    }
-    .tec_zone .card .conteudo img{
-        width: 50px;
-    }
-    .soy{
-        margin: auto;
-        justify-content: center;
-        padding: auto;
-    }
-    .caixa h2{
-        font-size: 1.3rem;
-    }
-   
-    .proyecto video{
-        width: 80%;
-    }
-    .proyecto h2{
-        font-size: 1.3rem;
-    }
-    .social img{
-        width: 30px;
-    }
-    .social{
-        margin-top: 15%;
-    }
-}
-/* ----------------- for device Medium ------------*/
-@media screen and (min-width: 361px) and (max-width: 800px){
-    .btns i{
-        margin-right: -250%;
-        font-size: 1.3rem;
-    }
-    .Eu_inicio img{
-        width: 320px;
-        margin-top: 5%;
-    }
-    .p_1{
-        font-size: 44px;
-    }
-    p{
-        font-size: 0.85rem;
-    }
-
-    .curriculo{
-        width: 130px;
-    }
-    .curriculo a{
-        font-size: 0.8rem;
-    }
-    .tec_zone{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-    .tec_zone .card{
-        width: 120px;
-        height: 120px;
-    }
-    .tec_zone .card .conteudo{
-        opacity: 1;
-        transform: none;
-    }
-    .tec_zone .card .conteudo img{
-        width: 50px;
-    }
-    .soy{
-        margin: auto;
-        justify-content: center;
-        padding: auto;
-    }
-    .caixa h2{
-        font-size: 1.3rem;
-    }
-    
-    .exper{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        margin-bottom: 3%;
-    }
-    
-    .exper .card{
-        width: 240px;
-        height: auto;
-        padding: 3%;
-        background-color: #529199;
-        color: #f9f7f2;
-        margin: 2%;
-        font-size: 0.85rem;
-    }
-    
-    .descricion{
-        width: 240px;
-        text-align: left;
-        font-size: 1rem;
-        margin-left: -0%;
-    }
-    .proyecto video{
-        width: 240px;
-    }
-    .proyecto h2{
-        font-size: 1.3rem;
-    }
-    .social img{
-        width: 30px;
-    }
-    .social{
-        margin-top: 15%;
-    }
-}
-/* ------------- for medium device 2  --------------*/

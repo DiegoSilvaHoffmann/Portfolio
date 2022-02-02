@@ -7,197 +7,174 @@
     <link rel="stylesheet" href="estilo.css">
 
     <script src="https://kit.fontawesome.com/deb21dbd43.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <!--  ==========   Font Paragrafo  ==============  -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="/js_principal/scrollreveal.min.js"></script>
+    <script src="/js_principal/interativo.js"></script>
 
-    <!--  ===========   Font Meu nome   ==============  -->
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-
-    <script type="text/javascript" src="scrollreveal.min.js"></script>
-
-    <title>Diego Hoffmann</title>
+    <title>Diego Da Silva Hoffmann</title>
 </head>
-<body class="container-fluid fundao">
-
-    <!--     =============  Navegador =================   -->
-    <header>
-        <div class="righSide">
-            <div class="btns dayNight">
-                <i class="far fa-moon"></i>
-                <i class="far fa-sun"></i>  
-            </div>
+<body onload="aparecer()">
+<!-- ======================  navegacion ===============================  -->
+    <header class="cabeza">
+        <div class="btn dia_noite">
+            <i class="far fa-moon"></i>
+            <i class="far fa-sun"></i>
         </div>
+        <nav class="navega">
+            <ul class="menu">
+                <li class="opicion">
+                    <a href="#soy">Quien soy</a>
+                </li>
+                <li class="opicion">
+                    <a href="#linguagem">Lo que sé</a>
+                </li>
+                <li class="opicion">
+                    <a href="#experiencia">Experiencias</a>
+                </li>
+                <li class="opicion">
+                    <a href="#proyectos">Proyectos</a>
+                </li>
+                <li class="opicion">
+                    <a href="#social">Social</a>
+                </li>   
+            </ul>
+        </nav>
     </header>
-
-    <!-- ==========  Eu =============   -->
-
-    <div class="Eu_inicio" id="Eu_inicio">
-        <img src="imagenes/startup.svg" alt="hombre caminando y ordenador">     
-        <div class="Nome">
-            <p class="p_1">Diego Da Silva Hoffmann</p>
-            <p>Desarrollador Web || Front-end Developer</p>
-            <div class="curriculo">
-                <a href="imagenes/CvDiego2021.pdf" target="_blank">Downloand CV</a>
+<!--  ======================  principal  ==============================  -->
+    <main class="inicio" id="inicio">
+        <div class="face">
+            <img src="imagenes/startup.svg" alt="hombre caminando y ordenador">
+            <div class="meu_nome">
+                <h1 class="nome">Diego Da Silva Hoffmann</h1>
+                <p class="p_1">Frontend Developer || Desarrollador Web</p>
+                <div class="curriculo">
+                    <a href="imagenes/CvDiego2021.pdf" target="_blank">Downloand CV</a>
+                </div>
             </div>
         </div>
-    </div>
-    <!--  ===================  Tecnologias  =================  -->
-    <h4 style="color: #f9f7f2; font-family: 'Lora', serif; text-align: center;">
-        Lo que sé
-    </h4>
-    <br>
-    <div class="tec_zone" id="tec_zone">
-        <div class="card">
-            <div class="conteudo">
-                <img src="imagenes/html5.svg" alt="logo html5">
+<!--  ====================== Sobre mim  ================================= -->
+        <section class="soy" id="soy">
+            <h3>QUIEN SOY</h3>
+            <div class="eu_pessoa">
+                <div class="foto_eu">
+                    <img src="imagenes/DiegoDaSilvaHoffmann.jpeg" alt="">
+                </div>
+                <div class="texto_eu">
+                    <p>Brasileño, casado con una gran fotógrafa y padre de una hermosa niña que nos alegra los días.</p>
+                    <p>Creo que soy un buen chef de "churrasco", y me gusta mucho disfrutar de estes momentos con amigos.</p><br>
+                    <p>Después de pasar tantos años en el campo del derecho como notario, cambié de país y descubrí la felicidad en la programación, en la oportunidad de crear algo y de trabajar en equipo como siempre lo he hecho.</p><br>
+                    <p>Bueno, en resumen, este soy yo...</p>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="conteudo">
-                <img src="imagenes/css3.svg" alt="logo css3">
+        </section>
+<!--  ======================= Tecnologias  ============================== -->
+        <section class="tecnologias">
+            <h3>Lo que sé</h3>
+            <div class="tec_zona" id="linguagem">
+                <div class="card">
+                    <div class="conteudo">
+                        <img src="imagenes/html5.svg" alt="logo html5">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="conteudo">
+                        <img src="imagenes/css3.svg" alt="logo CSS3">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="conteudo">
+                        <img src="imagenes/bootstrap.png" alt="logo bootstrap4">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="conteudo">
+                        <img src="imagenes/javascript.svg" alt="logo javascript">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="conteudo">
+                        <img src="imagenes/jquery.svg" alt="logo jQuery">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="conteudo">
+                        <img src="imagenes/python.svg" alt="logo python">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="conteudo">
-                <img src="imagenes/bootstrap.png" alt="logo bootstrap4">
+        </section>
+<!--  =========================== Experiencias  =======================  -->
+        <section class="experi" id="experiencia">
+            <h3>Algunas experiencias</h3>
+            <div class="desejo">
+                <div class="caixa">
+                    <h2>¿Que deseo?</h2>
+                    <br>
+                    <p>Aplicar mi experiencia y formación en soluciones.<br>
+                        Crecimiento como persona, aportando al equipo y encontrando la felicidad en cada día de trabajo.<br>
+                        Desarrollar mi carrera bajo la supervisión y el impulso de una empresa comprometida con la innovación.</p>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="conteudo">
-                <img src="imagenes/javascript.svg" alt="logo javascript">
+            <div class="deseo_profi">
+                <div class="exper_descrita">
+                    <div class="cartao" id="ex_1">
+                        <img src="imagenes/LH-LogoVariante.png" width="100px" alt="logo lu hoffmann fotografia">
+                        <p>Marzo 2014 - hasta hoy<br><hr>Experiencia en fotografía, edición y procesamiento de imágenes en exteriores.<br><hr>Creación de proyectos de capitalización pública en redes sociales, para el reconocimiento y crecimiento de marca.<br><hr>Aprendizaje diario en marketing, equipamiento y nuevas vistas para fotografiar.
+                        </p>
+                    </div>
+                    <div class="cartao" id="ex_2">
+                        <img src="imagenes/logo_ri3.png" width="100px" alt="logo ri3.com.br">
+                        <p>Sep 2004 – Jun 2017<br><hr>Implementación y mantenimiento del sistema de solicitud de certificados en línea.<br><hr>Responsable del contacto digital, entre usuario y notario.<br><hr>Entrenamiento y orientación personal.</p>
+                    </div>
+                    <div class="cartao" id="ex_3">
+                        <img src="imagenes/Maisons_du_Monde_logo.png" width="100px" alt="logo maisons du monde">
+                        <p>Agos 2021 - hasta hoy<br><hr>Venta directa al cliente.<br>Fidelización de clientes, y lograr objetivos</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="conteudo">
-                <img src="imagenes/jquery.svg" alt="logo jquery">
-            </div>
-        </div>
-        <div class="card">
-            <div class="conteudo">
-                <img src="imagenes/python.svg" alt="logo python">
-            </div>
-        </div>
-    </div>
-    <br>
- <!--  =============== Sobre mim  =================  -->
+        </section>
+<!--  ==================== Proyectos  ================================= -->
+        <section id="proyectos">
 
- <!--  ==========  Experiencias  =================   -->
-    <div class="soy" id="soy">
-
-        <div class="col-md-12 caixa">
-            <h2>¿Que deseo?</h2>
-            <br>
-            <p>Aplicar mi experiencia y formación en soluciones.<br>
-            Crecimiento como persona, aportando al equipo y encontrando la felicidad en cada día de trabajo.<br>
-            Desarrollar mi carrera bajo la supervisión y el impulso de una empresa comprometida con la innovación.</p>
-        </div>
-    </div>
-    <h5 class="titulo_experiencias">
-        Algunas experiencias
-    </h5>
-    <div class="exper">
-        <div class="card" id="ex_1">
-            
-                <img src="imagenes/LH-LogoVariante.png" width="100px" alt="logo lu hoffmann fotografia">
-                <p>Marzo 2014 - hasta hoy<br><hr>Experiencia en fotografía, edición y procesamiento de imágenes en exteriores.<br><hr>Creación de proyectos de capitalización pública en redes sociales, para el reconocimiento y crecimiento de marca.<br><hr>Aprendizaje diario en marketing, equipamiento y nuevas vistas para fotografiar.
-                </p>
-        </div>
-        <div class="card" id="ex_2">
-            
-            <img src="imagenes/logo_ri3.png" width="100px" alt="logo ri3.com.br">
-            <p>Sep 2004 – Jun 2017<br><hr>Implementación y mantenimiento del sistema de solicitud de certificados en línea.<br><hr>Responsable del contacto digital, entre usuario y notario.<br><hr>Entrenamiento y orientación personal.</p>
-        </div>
-        <div class="card" id="ex_3">
-            
-            <img src="imagenes/Maisons_du_Monde_logo.png" width="100px" alt="logo maisons du monde">
-            <p>Agos 2021 - hasta hoy<br><hr>Venta directa al cliente.<br>Fidelización de clientes, y lograr objetivos</p>
-        </div>
-    </div>
-
-    <!--   ================  Proyetos  ==================  -->
-
-    <div class="proyecto" id="proyeto">
-        <h2>Proyectos</h2>
-        <div style="display:flex; justify-content: center; align-items: center; margin-top: 2%;">
-            <video src="imagenes/FocusedOpenAmphibian-mobile.mp4" autoplay loop></video>
-        </div>
-
-        <div id="projetinho">
-            <button>
-                <a href="projetos/card_price.html" target="_blank">Card responsible
-                <p style="color: #f9f7f2; font-weight: bold;">
-                <span class="ht_color">HTML</span>
-                <span class="cs_color">CSS</span></p></a>
-            </button>
-            <button>
-                <a href="projetos/estatisticas_card.html" target="_blank">Card previa de estadísticas
-                <p style="color: #f9f7f2; font-weight: bold;">
-                <span class="ht_color">HTML</span>
-                <span class="cs_color">CSS</span></p></a>
-            </button>
-            <button>
-                <a href="projetos/primera_landing.html" target="_blank">Landing Page
-                <p style="color: #f9f7f2; font-weight: bold;">
-                <span class="ht_color">HTML</span>
-                <span class="cs_color">CSS</span>
-                <span class="js_color">JS</span></p>
-                </a>
-            </button>
-        </div>
-    </div>
-
-    <!--   =============== redes  ==============  -->
-    <div>
-        <div class="social">
-            <a href="https://www.facebook.com/diihoffmann" target="_blank">
-                <img src="imagenes/facebook.svg" width="50px" alt="icon Facebook">
+        </section>
+    </main>
+    <footer>
+<!-- ================ Social =============================  -->
+        <div class="social" id="social">
+            <a href="https://www.linkedin.com/in/diego-hoffmann" target="_blank">
+                <img src="imagenes/linkedin.svg" alt="icon linkedin Diego Hoffmann">
             </a>
-            <a href="https://www.twitter.com/diegovsh" target="_blank">
-                <img src="imagenes/twitter.svg" width="50px" alt="icon twitter">
+            <a href="https://www.github.com/DiegoSilvaHoffmann" target="_blank">
+                <img src="imagenes/github.svg" alt="icon GitHub Diego Hoffmann">
             </a>
             <a href="https://www.instagram.com/diihoffmann" target="_blank">
-                <img src="imagenes/instagram.svg" width="50px" alt="icon instagram">
+                <img src="imagenes/instagram.svg" alt="icon Instagram Diego Hoffmann">
             </a>
-            <a href="https://www.linkedin.com/in/diego-hoffmann" target="_blank">
-                <img src="imagenes/linkedin.svg" width="50px" alt="icon linkedin">
+            <a href="https://www.facebook.com/diihoffmann" target="_blank">
+                <img src="imagenes/facebook.svg" alt="icon facebook Diego Hoffmann">
             </a>
-            <a href="https://github.com/DiegoSilvaHoffmann" target="_blank">
-                <img src="imagenes/github.svg" width="50px" alt="icon github">
+            <a href="https://www.twitter.com/diegovsh" target="_blank">
+                <img src="imagenes/twitter.svg" alt="icon twitter Diego Hoffmann">
             </a>
+           
         </div>
-    </div>
-    
-    <!--  ===============   Quem fez  ================  -->
-    <div style="text-align: center;">
-        <p>By Diego Da Silva Hoffmann 2021</p>
-    </div>
+<!-- =============== Quem Fez ============================  -->
+        <div style="text-align: center;">
+            <p>By Diego Da Silva Hoffmann 2022</p>
+        </div>
+    </footer>
 
     <script>
         // ----- Menu navegador --------
-        let dayNight = document.querySelector('.dayNight')
+        let diaNoite = document.querySelector('.dia_noite')
         let body = document.querySelector('body')
         
-        dayNight.onclick = function(){
+        diaNoite.onclick = function(){
             body.classList.toggle('dark')
-            dayNight.classList.toggle('active')
+            diaNoite.classList.toggle('active')
         }
         
 
-        //----- ScrollReveal --------
-        const desliza = ScrollReveal({
-            origin: 'center',
-            duration: 3500,
-            delay: 200,
-        })
-        desliza.reveal(".p_1", {origin: "center"})
-        desliza.reveal(".tec_zone", {origin: "center"})
-        desliza.reveal("#ex_1", {origin: "left", distance: "160px"})
-        desliza.reveal("#ex_2", {origin: "bottom", distance: "160px"})
-        desliza.reveal("#ex_3", {origin: "right", distance: "160px"})
+      
     </script>
 </body>
 </html>
