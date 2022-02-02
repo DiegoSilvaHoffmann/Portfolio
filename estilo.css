@@ -143,6 +143,18 @@ a{
     font-weight: bold;
     transform: translatex(10px);
 }
+@media(max-width: 624px){
+    .face img{
+        width: 280px;
+    }
+    .face .meu_nome .nome{
+        font-size: 30px;
+    }
+    .face .curriculo{
+        width: 140px;
+        font-size: 1rem;
+    }
+}
 /*------------------ Sobre mim ---------------------*/
 .soy{
     margin: 4%;
