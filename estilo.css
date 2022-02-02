@@ -82,10 +82,10 @@ a{
 }
 .cabeza .navega .menu .opicion a{
     padding: 10px;
-    transition: 0.3s ease-in-out;
+    transition: 0.38s ease-out;
 }
-.cabeza .navega .menu .opicion a:hover{
-    border-left: 4px solid #36334f;
+.cabeza .navega .menu .opicion:hover{
+    border-left: 1px solid #36334f;
     color: #36334f;
 }
 
@@ -97,7 +97,7 @@ a{
     }
     .cabeza .navega .menu .opicion{
         border: 1px solid #36334f;
-        border-radius: 4px;
+        border-radius: 4px;   
     }
 }
 /* ---------- principal --------*/
