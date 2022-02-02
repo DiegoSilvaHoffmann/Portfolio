@@ -144,8 +144,12 @@ a{
     transform: translatex(10px);
 }
 @media(max-width: 624px){
+    .face{
+        height: 100vh;
+    }
     .face img{
         width: 280px;
+        margin: auto;
     }
     .face .meu_nome .nome{
         font-size: 30px;
@@ -182,6 +186,14 @@ a{
     width: 420px;
     text-align: justify;    
 }
+@media(max-width: 624px){
+    .soy{
+        margin: 10%;
+    }
+    .soy .eu_pessoa .texto_eu{
+        padding: 10px;
+    }
+}
 /* -------------- Tecnologias -------------------*/
 .tecnologias{
     margin-top: 10%;
@@ -213,6 +225,20 @@ a{
 }
 .tec_zona .card .conteudo{
     padding: 10px;
+}
+@media(max-width: 624px){
+    .tec_zona{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2%;
+    }
+    .tec_zona .card{
+        width: 120px;
+        height: 120px;
+    }
+    .tec_zona .card .conteudo img{
+        width: 50px;
+    }
 }
 /*-------------- Experiencias ---------------*/
 
@@ -249,6 +275,12 @@ a{
     color: #f9f7f2;
     margin: 2%;
     border-radius: 10px;
+}
+@media(max-width: 624px){
+    .exper_descrita .cartao{
+        width: 260px;
+        padding: 20px;
+    }
 }
 /* ----------- projetos -------------*/
 
