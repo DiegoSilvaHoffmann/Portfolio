@@ -49,7 +49,6 @@ a{
 /* --------- Navegacion ---------*/
 .cabeza{
     display: flex;
-    
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
@@ -88,6 +87,18 @@ a{
 .cabeza .navega .menu .opicion a:hover{
     border-left: 4px solid #36334f;
     color: #36334f;
+}
+
+@media(max-width: 624px){
+    .cabeza .menu{
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 0.7rem;
+    }
+    .cabeza .navega .menu .opicion{
+        border: 1px solid #36334f;
+        border-radius: 4px;
+    }
 }
 /* ---------- principal --------*/
 .face img{
@@ -192,6 +203,7 @@ a{
     padding: 10px;
 }
 /*-------------- Experiencias ---------------*/
+
 .experi h3{
     text-align: center;
     margin: 100px;
