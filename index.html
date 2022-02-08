@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="estilo.css">
 
     <script src="https://kit.fontawesome.com/deb21dbd43.js" crossorigin="anonymous"></script>
+
     
     <script src="js_principal/scrollreveal.min.js"></script>
     <script src="js_principal/interativo.js"></script>
@@ -71,36 +72,35 @@
         <section class="tecnologias">
             <h3>Lo que sé</h3>
             <div class="tec_zona" id="linguagem">
-                <div class="card">
-                    <div class="conteudo">
-                        <img src="imagenes/html5.svg" alt="logo html5">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="conteudo">
-                        <img src="imagenes/css3.svg" alt="logo CSS3">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="conteudo">
-                        <img src="imagenes/bootstrap.png" alt="logo bootstrap4">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="conteudo">
-                        <img src="imagenes/javascript.svg" alt="logo javascript">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="conteudo">
-                        <img src="imagenes/jquery.svg" alt="logo jQuery">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="conteudo">
+                <div class="tecno2">
+                    <!--<span class="conteudo" style="--i:0;--x:-1;--y:0">
+                        
+                    </span>
+                    <span class="conteudo" style="--i:1;--x:1;--y:0">
+                        <img src="imagenes/git_logo.png" alt="logo git">
+                    </span>-->
+                    <span class="conteudo" style="--i:2;--x:0;--y:-1">
+                        <img src="imagenes/css3.svg" alt="logo css3">
+                    </span>
+                    <span class="conteudo" style="--i:3;--x:0;--y:1">
+                        <img src="imagenes/jquery.svg" alt="logo jquery">
+                    </span>
+                    <span class="conteudo" style="--i:4;--x:1;--y:1">
                         <img src="imagenes/python.svg" alt="logo python">
-                    </div>
-                </div>
+                    </span>
+                    <span class="conteudo" style="--i:5;--x:-1;--y:-1">
+                        <img src="imagenes/html5.svg" alt="logo html5">
+                    </span>
+                    <span class="conteudo" style="--i:6;--x:0;--y:0">
+                        <img src="imagenes/cerebro.svg" style="opacity: 0.5;">
+                    </span>
+                    <span class="conteudo" style="--i:7;--x:-1;--y:1">
+                        <img src="imagenes/javascript.svg" alt="logo javascript">
+                    </span>
+                    <span class="conteudo" style="--i:7;--x:1;--y:-1">
+                        <img src="imagenes/bootstrap.png" alt="logo bootstrap4">
+                    </span>
+                 </div>
             </div>
         </section>
 <!--  =========================== Experiencias  =======================  -->
@@ -158,8 +158,10 @@
                 <img src="imagenes/twitter.svg" alt="icon twitter Diego Hoffmann">
             </a>  
         </div>
+<!--================ teste swiper ==============  -->
+
 <!-- =============== Quem Fez ============================  -->
-        <div style="text-align: center;">
+        <div style="text-align: center; margin-bottom: 10%;">
             <p>By Diego Da Silva Hoffmann 2022</p>
         </div>
     </footer>
@@ -173,7 +175,11 @@
             body.classList.toggle('dark')
             diaNoite.classList.toggle('active')
         }
-           
+    </script>
+    <script>
+        let tecno = document.querySelector('.tecno2') 
+        tecno.onclick = function(){
+            tecno.classList.toggle('active')}
     </script>
 </body>
 </html>

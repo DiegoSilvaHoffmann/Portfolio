@@ -35,8 +35,8 @@ a{
 .dark .cabeza .menu .opicion a{
     color: #f9f7f2;
 }
-.dark .cabeza .navega .menu .opicion a:hover{
-    border-left: 4px solid #fcdd86;
+.dark .cabeza .navega .menu .opicion:hover{
+    border-left: 1px solid #fcdd86;
     color: #f9f7f2;
     font-weight: 300;
 }
@@ -45,6 +45,17 @@ a{
     background: #36334f;
     box-shadow: inset 20px 20px 60px #2e2b43,
             inset -20px -20px 60px #3e3b5b;
+}
+
+.dark .tecno2{
+    background: #36334f;
+    transition: 0s;
+}
+.dark .tecno2.active span{
+    border-radius: 38px;
+    background: linear-gradient(145deg, #312e47, #3a3755);
+    box-shadow:  20px 20px 60px #2e2b43,
+             -20px -20px 60px #3e3b5b;
 }
 /* --------- Navegacion ---------*/
 .cabeza{
@@ -99,6 +110,9 @@ a{
         border: 1px solid #36334f;
         border-radius: 4px;   
     }
+    .dark .cabeza .navega .menu .opicion{
+        border: 1px solid #f9f7f2;
+        border-radius: 4px;   
 }
 /* ---------- principal --------*/
 .face img{
@@ -112,6 +126,30 @@ a{
     align-items: center;
     flex-wrap: wrap;
     height: 100vh;
+    /*----ver----*/
+    gap: 20px;
+    display: grid;
+    gap: var(--gap);
+
+    grid-template-columns:
+        repeat(auto-fit,
+            minmax(max(50% - var(--gap),
+                    min(350px, 100%)),
+                1fr));
+
+    /* or */
+
+    grid-template-columns:
+        repeat(auto-fill,
+            minmax(min(100%, max(50% - var(--gap), 200px)),
+                1fr));
+
+    /* or */
+
+    grid-template-columns:
+        repeat(auto-fit,
+            minmax(clamp(50% - var(--gap), 350px, 100%),
+                1fr));
 }
 .meu_nome .nome{
     font-family: 'Lora', serif;
@@ -136,12 +174,13 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.4s ease-in-out;
+    transition: 0.6s ease-in-out;
 }
 .face .curriculo:hover{
     background-color: #fcdd86;
     font-weight: bold;
     transform: translatex(10px);
+    filter: drop-shadow(0 0 20px #fcdd86);
 }
 @media(max-width: 624px){
     .face{
@@ -197,47 +236,86 @@ a{
 /* -------------- Tecnologias -------------------*/
 .tecnologias{
     margin-top: 10%;
+    height: 700px;
 }
 .tecnologias h3{
     text-align: center;
     margin: 100px 0;
 }
 .tec_zona{
-    display: grid;
-    z-index: 1;
-    grid-gap: .3rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-.tec_zona .card{
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    border-radius: 50px;
-    background: #e57461;
-    box-shadow: 20px 20px 60px #c36352,
-                -20px -20px 60px #ff8570;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.tec_zona .card .conteudo img{
-    width: 100px;
+.tec_zona .tecno2{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.tec_zona .card .conteudo{
-    padding: 10px;
+.tecno2{
+    position: relative;
+    width: 420px;
+    height: 260px;
+    background-color: #e57461;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.8s;
 }
+.tecno2.active{
+    width: 520px;
+    height: 340px;
+    transition-delay: 0s;
+}
+.tecno2 span{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#c36352;
+    border-radius: 45%;
+    transform: translate(calc(80px * var(--x)), calc(40px * var(--y)));
+    transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+}
+.tecno2.active span{
+    width: 180px;
+    height: 180px;
+    transform: translate(calc(300px * var(--x)), calc(200px * var(--y)));
+    background: #e57461;
+    box-shadow: 20px 20px 60px #c36352,
+                -20px -20px 60px #ff8570;
+    padding: 2%;
+}
+.tecno2 span img{
+    transition: 0.6s;
+    width: 0;
+}
+.tecno2.active span img{
+    width: 80px;
+    padding: 5px;
+}
+.tecno2.active span img:hover{
+    filter: drop-shadow(0 0 8px white);
+}
+
 @media(max-width: 624px){
-    .tec_zona{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 2%;
-    }
-    .tec_zona .card{
-        width: 120px;
+   
+    .tecno2.active {
+        width: 240px;
         height: 120px;
     }
-    .tec_zona .card .conteudo img{
-        width: 50px;
+    .tecno2.active span{
+        width: 90px;
+        height: 90px;
+        transform: translate(calc(110px * var(--x)), calc(110px * var(--y)));
     }
 }
 /*-------------- Experiencias ---------------*/
