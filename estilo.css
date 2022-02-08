@@ -44,12 +44,10 @@ a{
     border-radius: 50px;
     background: #36334f;
     box-shadow: inset 20px 20px 60px #2e2b43,
-            inset -20px -20px 60px #3e3b5b;
+        inset -20px -20px 60px #3e3b5b;
 }
-
 .dark .tecno2{
     background: #36334f;
-    transition: 0s;
 }
 .dark .tecno2.active span{
     border-radius: 38px;
@@ -72,8 +70,7 @@ a{
 }
 .cabeza .btn i{
     font-size: 1.3rem;
-    opacity: 0.7;
-   
+    opacity: 0.7;  
 }
 .cabeza .btn i:nth-child(2){
     display: none;
@@ -112,7 +109,8 @@ a{
     }
     .dark .cabeza .navega .menu .opicion{
         border: 1px solid #f9f7f2;
-        border-radius: 4px;   
+        border-radius: 4px;
+    }   
 }
 /* ---------- principal --------*/
 .face img{
@@ -126,30 +124,7 @@ a{
     align-items: center;
     flex-wrap: wrap;
     height: 100vh;
-    /*----ver----*/
-    gap: 20px;
-    display: grid;
-    gap: var(--gap);
 
-    grid-template-columns:
-        repeat(auto-fit,
-            minmax(max(50% - var(--gap),
-                    min(350px, 100%)),
-                1fr));
-
-    /* or */
-
-    grid-template-columns:
-        repeat(auto-fill,
-            minmax(min(100%, max(50% - var(--gap), 200px)),
-                1fr));
-
-    /* or */
-
-    grid-template-columns:
-        repeat(auto-fit,
-            minmax(clamp(50% - var(--gap), 350px, 100%),
-                1fr));
 }
 .meu_nome .nome{
     font-family: 'Lora', serif;
@@ -307,7 +282,6 @@ a{
 }
 
 @media(max-width: 624px){
-   
     .tecno2.active {
         width: 240px;
         height: 120px;
