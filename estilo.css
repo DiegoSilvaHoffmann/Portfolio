@@ -114,17 +114,16 @@ a{
 }
 /* ---------- principal --------*/
 .face img{
-    width: 540px;
+    width: 480px;
     height: auto;
-    margin: 4%;
+    margin: 2%;
 }
 .face{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     height: 100vh;
-
 }
 .meu_nome .nome{
     font-family: 'Lora', serif;
@@ -173,6 +172,7 @@ a{
         font-size: 1rem;
     }
 }
+
 /*------------------ Sobre mim ---------------------*/
 .soy{
     margin: 4%;
@@ -198,7 +198,8 @@ a{
 }
 .soy .eu_pessoa .texto_eu{
     width: 420px;
-    text-align: justify;    
+    text-align: justify;
+    padding: 10px;    
 }
 @media(max-width: 624px){
     .soy{
@@ -213,9 +214,10 @@ a{
     margin-top: 10%;
     height: 700px;
 }
-.tecnologias h3{
+.tecnologias h1{
     text-align: center;
     margin: 100px 0;
+    
 }
 .tec_zona{
     height: 500px;
@@ -249,12 +251,12 @@ a{
 }
 .tecno2 span{
     position: absolute;
-    width: 17px;
-    height: 17px;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background:#c36352;
+    background: #c36352;
     border-radius: 45%;
     transform: translate(calc(80px * var(--x)), calc(40px * var(--y)));
     transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
@@ -335,7 +337,11 @@ a{
     }
 }
 /* ----------- projetos -------------*/
-
+.swiper{
+    width: 180px;
+    height: 100px;
+    background-color: #f9f7f2;
+}
 /*------------- redes sociais / contato -----------*/
 .social{
     display: flex;
