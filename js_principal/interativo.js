@@ -2,8 +2,8 @@
 function aparecer(){
   const desliza = ScrollReveal({
     origin: 'center',
-    duration: 3500,
-    delay: 200,
+    duration: 2600,
+    delay: 130,
   })
   desliza.reveal(".meu_nome", {origin: "center"})
   desliza.reveal(".menu", {origin: "left", distance: "160px"})
