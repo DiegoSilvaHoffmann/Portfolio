@@ -24,14 +24,31 @@
             <a href="#"><b>Try it free 7 days</b> then $20/mo. thereafter</a>
         </div>
         <div class="formu">
-            <form name="f1">
-                <input type="text" id="nombre" placeholder="First Name">
-                <input type="text" id="apellido" placeholder="Last Name"> 
-                <input type="mail" id="mail" placeholder="Email Address">
-                <input type="text" id="senha" placeholder="Password">
+            <form name="f1" id="f1">
+                <div>
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="First Name">
+                    <img class="falha" src="/projetos/src/imagens_projetos/icon-error.svg">
+                    <div class="error"></div>
+                </div>
+                <div>
+                    <input type="text" id="apellido" name="apellido" placeholder="Last Name">
+                    <img class="falha" src="/projetos/src/imagens_projetos/icon-error.svg">
+                    <div class="error"></div> 
+                </div>
+                <div>
+                    <input type="email" id="mail" name="mail" placeholder="Email Address">
+                    <img class="falha" src="/projetos/src/imagens_projetos/icon-error.svg">
+                    <div class="error"></div>
+                </div>
+                <div>
+                    <input type="password" id="senha" name="senha" placeholder="Password">
+                    <img class="falha" src="/projetos/src/imagens_projetos/icon-error.svg">
+                    <div class="error"></div>
+                </div>
               
                 <div class="btn">
-                    <button type="submit" onsubmit="confirma()">CLAIM YOUR FREE TRIAL</button>
+                    <button type="submit" id="submit">CLAIM YOUR FREE TRIAL</button>
                 </div>
             </form>
             <div class="termos">
@@ -40,8 +57,40 @@
         </div>
     </div>
     <script>
-        let nombreUsuario = document.getElementById('nombre')
+       let id = (id) => document.getElementById(id)
+       let classes = (classes) => document.getElementsByClassName(classes)
 
+       let user = id('nombre'),
+       apel = id('apellido'),
+       email = id('mail'),
+       pass = id('senha'),
+       form = id('f1'),
+       errorMsg = classes('error'),
+       failureImg = classes('falha')
+
+       form.addEventListener('submit', (e) =>{
+           e.preventDefault()
+
+           engine(user, 0, 'First name cannot be empty')
+           engine(apel, 1, 'Last name cannot be empty')
+           engine(email, 2, 'Looks like this is not an email')
+           engine(pass, 3, 'Password cannot be empty')
+       })
+
+       let engine = (id, serial, message) =>{
+               if(id.value.trim() === ""){
+                   errorMsg[serial].innerHTML = message
+                   id.style.border = "1px solid #f2796e"
+
+                   failureImg[serial].style.opacity = '1'
+                   if(email.value.trim() === ""){
+                        email.placeholder = "example@email.com"
+                    }
+               }
+               else{
+                   id.style.border = "1px solid #64CF93"
+               }}
+               
     </script>
 </body>
 </html>
