@@ -168,9 +168,10 @@ a{
     .face .meu_nome .nome{
         font-size: 30px;
     }
+  
     .face .curriculo{
         width: 140px;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     
 }
@@ -261,7 +262,7 @@ a{
     background: #c36352;
     border-radius: 45%;
     transform: translate(calc(80px * var(--x)), calc(40px * var(--y)));
-    transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
+    transition: transform 0.5s, width 0.5s, height 0.5s, background 0.2s;
     transition-delay: calc(0.1s * var(--i));
 }
 .tecno2.active span{

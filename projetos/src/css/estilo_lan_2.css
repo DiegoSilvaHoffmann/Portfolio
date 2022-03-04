@@ -3,7 +3,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     background: hsl(0, 100%, 74%);
-    background-image: url("/projetos/src/imagens_projetos/bg-intro-desktop.png");
+    background-image: url("../imagens_projetos/bg-intro-desktop.png");
     font-size: 16px;
     color: aliceblue;
     display: flex;

@@ -1,4 +1,5 @@
   //----- ScrollReveal --------
+  
 function aparecer(){
   const desliza = ScrollReveal({
     origin: 'center',
@@ -11,4 +12,5 @@ function aparecer(){
   desliza.reveal("#ex_1", {origin: "left", distance: "160px"})
   desliza.reveal("#ex_2", {origin: "bottom", distance: "160px"})
   desliza.reveal("#ex_3", {origin: "right", distance: "160px"})
+
 }
